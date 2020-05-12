@@ -20,6 +20,8 @@ require_once("config.php");
 //$usuario->login("root","!@#$");
 //echo $usuario;
 
+
+/*criando um user
 $aluno = new Usuario();
 
 $aluno->setDeslogin("aluno");
@@ -28,5 +30,14 @@ $aluno->setDessenha("@lun0");
 $aluno->insert();
 
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor","!@#$%¨&*");
+
+echo $usuario
 
  ?>
